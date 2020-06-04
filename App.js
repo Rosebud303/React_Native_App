@@ -1,15 +1,9 @@
-
-
 import React, { Component } from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
-  StatusBar,
-  Image,
 } from 'react-native';
+import { Header } from './components/Header';
 
 
 class App extends Component {
@@ -23,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Hello World</Text>
+        <Header />
       </View>
     );
   }
@@ -31,14 +25,8 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
-    flex: 3,
-    justifyContent: "center",
-    alignItems: 'center',
-  },
-
-  text: {
-    fontSize: 40,
+    flex: 1,
+    paddingTop: 60,
   }
 });
 
